@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/jeuLayout"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blue"
+    tools:context=".Jeu"
+    android:clickable="true"
+    android:forceHasOverlappingRendering="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/jeuTvSaisirNombre"
+        android:id="@+id/textView"
+        android:layout_below="@+id/jeuTvAfficherReponse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/jeuTxtEntrerValeur"
+        android:autoText="false"
+        android:textAlignment="center"
+        android:hint="@string/jeuHintSaisieValeur"
+        android:text="@string/jeuItSaisieValeur"
+        android:maxLength="3"
+        android:background="#ffffff"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/jeuBtnRejouer"
+        android:layout_toEndOf="@+id/jeuBtnRejouer"
+        android:layout_marginTop="28dp"
+        android:layout_alignStart="@+id/jeuBtnValider"
+        android:layout_alignLeft="@+id/jeuBtnValider"
+        android:layout_alignEnd="@+id/jeuBtnValider"
+        android:layout_alignRight="@+id/jeuBtnValider" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jeuBtnValider"
+        android:id="@+id/jeuBtnValider"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/jeuTxtEntrerValeur"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/jeuTvReponse"
+        android:id="@+id/jeuTvReponse"
+        android:textAlignment="center"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/jeuBtnValider"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/jeuTvTentativesRestantes"
+        android:id="@+id/jeuTvTentativesRestantes"
+        android:textAlignment="center"
+        android:layout_below="@+id/jeuTvReponse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jeuBtnRejouer"
+        android:id="@+id/jeuBtnRejouer"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/jeuBtnValider"
+        android:layout_toStartOf="@+id/jeuBtnValider" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jeuSwAfficherReponse"
+        android:id="@+id/jeuSwAfficherReponse"
+        android:focusable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/jeuTvAfficherReponse"
+        android:id="@+id/jeuTvAfficherReponse"
+        android:layout_below="@+id/jeuSwAfficherReponse"
+        android:layout_alignRight="@+id/jeuSwAfficherReponse"
+        android:layout_alignEnd="@+id/jeuSwAfficherReponse"
+        android:enabled="false"
+        android:textColor="@color/red" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jeuTvQuitter"
+        android:id="@+id/jeuBtnQuitter"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/jeuBtnValider"
+        android:layout_toEndOf="@+id/jeuBtnValider" />
+
+</RelativeLayout>

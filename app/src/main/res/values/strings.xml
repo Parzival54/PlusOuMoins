@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PlusOuMoins</string>
+    <string name="jeuTvSaisirNombre">Saisir une valeur entre 1 et 100</string>
+    <string name="jeuBtnValider">Valider</string>
+    <string name="jeuHintSaisieValeur">Valeur ?</string>
+    <string name="jeuTvTentativesRestantes"></string>
+    <string name="jeuTvReponse"></string>
+    <string name="jeuItSaisieValeur"></string>
+    <string name="jeuBtnRejouer">Rejouer</string>
+    <string name="jeuSwAfficherReponse">Afficher réponse</string>
+    <string name="jeuTvAfficherReponse"></string>
+    <string name="jeuTvQuitter">Quitter</string>
+    <string name="jeuLayout"></string>
+    <string-array name="jeuSpChoixDifficulte">
+        <item>Facile</item>
+        <item>Intermédiaire</item>
+        <item>Difficile</item>
+    </string-array>
+</resources>
